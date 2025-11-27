@@ -6,66 +6,14 @@
     <title>Cuma | 3D Artist & Developer</title>
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
     <style>
-        body {
-            font-family: sans-serif;
-            background-color: #1a1a1a;
-            color: white;
-            margin: 0;
-            padding: 20px;
-            text-align: center;
-        }
-
-        header {
-            padding: 40px;
-            border-bottom: 2px solid #333;
-        }
-
-        h1 {
-            color: #4CAF50;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .section {
-            margin-top: 50px;
-            padding: 20px;
-            background: #2a2a2a;
-            border-radius: 10px;
-        }
-
-        /* 3D Model Kutusu Tasarımı */
-        model-viewer {
-            width: 100%;
-            height: 400px;
-            background-color: #444;
-            border-radius: 8px;
-            margin-bottom: 20px; /* Modeller arası boşluk */
-        }
-
-        /* Model Başlıkları */
-        h3.model-title {
-            text-align: left;
-            margin-top: 30px;
-            color: #ddd;
-        }
-
-        /* Buton Tasarımı*/
-        .btn {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            display: inline-block;
-            margin-top: 10px;
-        }
-
-        .btn:hover {
-            background-color: #45a049;
-        }
+        body { font-family: sans-serif; background-color: #1a1a1a; color: white; margin: 0; padding: 20px; text-align: center; }
+        header { padding: 40px; border-bottom: 2px solid #333; }
+        h1 { color: #4CAF50; }
+        .container { max-width: 800px; margin: 0 auto; }
+        .section { margin-top: 50px; padding: 20px; background: #2a2a2a; border-radius: 10px; }
+        model-viewer { width: 100%; height: 400px; background-color: #444; border-radius: 8px; }
+        .btn { background-color: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 10px; }
+        .btn:hover { background-color: #45a049; }
     </style>
 </head>
 <body>
@@ -76,43 +24,29 @@
     </header>
 
     <div class="container">
-
         <div class="section">
             <h2>Hakkımda</h2>
             <p>
-                Merhaba, ben CUMA! <br><br>
-                Yönetim Bilişim Sistemleri okuyorum ve teknolojiyle iş süreçlerini iyileştirmeye ilgi duyuyorum.
-                Burada hem okul projelerimi hem de kendi geliştirdiğim küçük uygulamaları paylaşıyorum. Kod yazarak öğrenmeyi çok seviyorum.
-                <br><br>
-                <strong>İlgi Alanlarım:</strong><br>
-                - Visual Studio ile yazılım geliştirme<br>
-                - Basit Unity projeleri<br>
-                - Web teknolojilerini öğrenme
-                <br><br>
-                Amacım her gün bir öncekinden daha iyi bir geliştirici olmak..
+                Merhaba, ben CUMA! Yönetim Bilişim Sistemleri okuyorum.
+                Visual Studio, Unity ve Web teknolojileri ile ilgileniyorum.
             </p>
         </div>
 
         <div class="section">
             <h2>3D Modellerim</h2>
-            <p>Aşağıdaki modelleri fare ile döndürebilirsin:</p>
-
-            <h3 class="model-title">1. İlk Modelim</h3>
-            <model-viewer src="modelim.glb" alt="3D Model" auto-rotate camera-controls></model-viewer>
-
-            <h3 class="model-title">2. Arda Modeli</h3>
+            <p>Aşağıdaki modeli fare ile döndürebilirsin:</p>
+            
+            <h3 style="color:#ddd;">Arda Modeli</h3>
             <model-viewer src="arda-model.glb" alt="Arda 3D Model" auto-rotate camera-controls></model-viewer>
         </div>
 
         <div class="section">
             <h2>Unity Projelerim</h2>
             <p>Geliştirdiğim oyunları tarayıcı üzerinden oynayabilirsiniz.</p>
-
             <h3>Proje 1: Bayrak Kapmaca</h3>
             <p>Karakterin bayrağa ulaşmaya çalıştığı 2D platform oyunu.</p>
             <a href="oyun1/index.html" class="btn" target="_blank">Oyunu Oyna</a>
         </div>
-
     </div>
 
     <footer style="margin-top: 50px; color: #777;">

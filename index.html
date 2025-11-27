@@ -42,6 +42,14 @@
             height: 400px;
             background-color: #444;
             border-radius: 8px;
+            margin-bottom: 20px; /* Modeller arası boşluk */
+        }
+
+        /* Model Başlıkları */
+        h3.model-title {
+            text-align: left;
+            margin-top: 30px;
+            color: #ddd;
         }
 
         /* Buton Tasarımı*/
@@ -55,16 +63,16 @@
             margin-top: 10px;
         }
 
-            .btn:hover {
-                background-color: #45a049;
-            }
+        .btn:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
 
     <header>
         <h1>Merhaba, Ben Cuma</h1>
-        <p>Yönetim Bilişim Sistemleri ögrencisi</p>
+        <p>Yönetim Bilişim Sistemleri Öğrencisi</p>
     </header>
 
     <div class="container">
@@ -72,42 +80,44 @@
         <div class="section">
             <h2>Hakkımda</h2>
             <p>
-                Merhaba, ben CUMA!
-
-                Yönetim Bilişim Sistemleri okuyorum ve teknolojiyle iş süreçlerini iyilestirmeye ilgi duyuyorum.
-                Burada hem okul projelerimi hem de kendi geliştirdiğim küçük uygulamalari paylasiyorum. Kod yazarak öğrenmeyi cok seviyorum.
-
-                ilgi Alanlarim
-                - Visual studio ile yazilim gelistirme
-                - Basit unity projeleri
-                - Web teknolojilerini ogrenme
-
-                Amacim her gün bir oncekinden daha iyi bir gelistirici olmak..
+                Merhaba, ben CUMA! <br><br>
+                Yönetim Bilişim Sistemleri okuyorum ve teknolojiyle iş süreçlerini iyileştirmeye ilgi duyuyorum.
+                Burada hem okul projelerimi hem de kendi geliştirdiğim küçük uygulamaları paylaşıyorum. Kod yazarak öğrenmeyi çok seviyorum.
+                <br><br>
+                <strong>İlgi Alanlarım:</strong><br>
+                - Visual Studio ile yazılım geliştirme<br>
+                - Basit Unity projeleri<br>
+                - Web teknolojilerini öğrenme
+                <br><br>
+                Amacım her gün bir öncekinden daha iyi bir geliştirici olmak..
             </p>
         </div>
 
         <div class="section">
             <h2>3D Modellerim</h2>
-            <p>Asagidaki modeli fare ile döndürebilirsin:</p>
+            <p>Aşağıdaki modelleri fare ile döndürebilirsin:</p>
 
+            <h3 class="model-title">1. İlk Modelim</h3>
             <model-viewer src="modelim.glb" alt="3D Model" auto-rotate camera-controls></model-viewer>
+
+            <h3 class="model-title">2. Arda Modeli</h3>
+            <model-viewer src="arda 3d modl.glb" alt="Arda 3D Model" auto-rotate camera-controls></model-viewer>
         </div>
 
         <div class="section">
             <h2>Unity Projelerim</h2>
-            <p>Gelistirdigim oyunları tarayici uzerinden oynayabilirsiniz.</p>
+            <p>Geliştirdiğim oyunları tarayıcı üzerinden oynayabilirsiniz.</p>
 
             <h3>Proje 1: Bayrak Kapmaca</h3>
-            <p>Karakterin bayraga ulasmaya çalıştırma 2D platform oyunu.</p>
+            <p>Karakterin bayrağa ulaşmaya çalıştığı 2D platform oyunu.</p>
             <a href="oyun1/index.html" class="btn" target="_blank">Oyunu Oyna</a>
         </div>
 
     </div>
 
     <footer style="margin-top: 50px; color: #777;">
-        <p> 2025 Cuma - Tum Haklari Saklidir.</p>
+        <p> 2025 Cuma - Tüm Hakları Saklıdır.</p>
     </footer>
 
 </body>
-
 </html>

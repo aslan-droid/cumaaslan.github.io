@@ -3,68 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cuma | 3D Artist & Developer</title>
+    <title>Cuma | Portfolyo</title>
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+    
     <style>
         body {
-            font-family: sans-serif;
-            background-color: #1a1a1a;
-            color: white;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #1a1a1a; /* Koyu arka plan */
+            color: #ffffff; /* Beyaz yazı */
             margin: 0;
-            padding: 20px;
+            padding: 0;
             text-align: center;
         }
 
         header {
-            padding: 40px;
-            border-bottom: 2px solid #333;
+            padding: 40px 20px;
+            background-color: #252525;
+            border-bottom: 3px solid #4CAF50;
         }
 
         h1 {
-            color: #4CAF50;
+            color: #4CAF50; /* Yeşil başlık */
+            margin: 0;
+            font-size: 2.5em;
         }
 
         .container {
             max-width: 800px;
             margin: 0 auto;
+            padding: 20px;
         }
 
         .section {
-            margin-top: 50px;
-            padding: 20px;
-            background: #2a2a2a;
-            border-radius: 10px;
-        }
-
-        /* 3D Model Kutusu Tasarımı */
-        model-viewer {
-            width: 100%;
-            height: 400px;
-            background-color: #444;
-            border-radius: 8px;
-            margin-bottom: 20px; /* Modeller arası boşluk */
-        }
-
-        /* Model Başlıkları */
-        h3.model-title {
-            text-align: left;
+            background-color: #2a2a2a;
             margin-top: 30px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            border-bottom: 1px solid #555;
+            padding-bottom: 10px;
             color: #ddd;
         }
 
-        /* Buton Tasarımı*/
-        .btn {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            display: inline-block;
-            margin-top: 10px;
+        /* 3D Model Kutusu */
+        model-viewer {
+            width: 100%;
+            height: 400px;
+            background-color: #333;
+            border-radius: 8px;
+            margin-top: 15px;
         }
 
-        .btn:hover {
-            background-color: #45a049;
+        /* Oyun Butonu Tasarımı */
+        .btn-game {
+            display: inline-block;
+            background-color: #4CAF50; /* Yeşil Buton */
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+
+        .btn-game:hover {
+            background-color: #45a049; /* Üzerine gelince koyulaşsın */
+            cursor: pointer;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            color: #888;
+            font-size: 0.9em;
         }
     </style>
 </head>
@@ -72,7 +88,7 @@
 
     <header>
         <h1>Merhaba, Ben Cuma</h1>
-        <p>Yönetim Bilişim Sistemleri Öğrencisi</p>
+        <p>Yönetim Bilişim Sistemleri | Unity & 3D Geliştirici</p>
     </header>
 
     <div class="container">
@@ -80,43 +96,30 @@
         <div class="section">
             <h2>Hakkımda</h2>
             <p>
-                Merhaba, ben CUMA! <br><br>
-                Yönetim Bilişim Sistemleri okuyorum ve teknolojiyle iş süreçlerini iyileştirmeye ilgi duyuyorum.
-                Burada hem okul projelerimi hem de kendi geliştirdiğim küçük uygulamaları paylaşıyorum. Kod yazarak öğrenmeyi çok seviyorum.
-                <br><br>
-                <strong>İlgi Alanlarım:</strong><br>
-                - Visual Studio ile yazılım geliştirme<br>
-                - Basit Unity projeleri<br>
-                - Web teknolojilerini öğrenme
-                <br><br>
-                Amacım her gün bir öncekinden daha iyi bir geliştirici olmak..
+                Merhaba! Visual Studio, Unity ve Web teknolojileri ile ilgileniyorum.
+                Hem 3D modelleme yapıyor hem de oyun geliştiriyorum. 
+                Amacım her gün bir öncekinden daha iyi bir geliştirici olmak.
             </p>
         </div>
 
         <div class="section">
             <h2>3D Modellerim</h2>
-            <p>Aşağıdaki modelleri fare ile döndürebilirsin:</p>
-
-            <h3 class="model-title">1. İlk Modelim</h3>
-            <model-viewer src="modelim.glb" alt="3D Model" auto-rotate camera-controls></model-viewer>
-
-            <h3 class="model-title">2. Arda Modeli</h3>
-            <model-viewer src="arda 3d modl.glb" alt="Arda 3D Model" auto-rotate camera-controls></model-viewer>
+            <p>Aşağıdaki modeli fare ile çevirebilirsin:</p>
+            
+            <model-viewer src="arda-model.glb" alt="3D Model" auto-rotate camera-controls></model-viewer>
         </div>
 
         <div class="section">
-            <h2>Unity Projelerim</h2>
-            <p>Geliştirdiğim oyunları tarayıcı üzerinden oynayabilirsiniz.</p>
-
-            <h3>Proje 1: Bayrak Kapmaca</h3>
-            <p>Karakterin bayrağa ulaşmaya çalıştığı 2D platform oyunu.</p>
-            <a href="oyun1/index.html" class="btn" target="_blank">Oyunu Oyna</a>
+            <h2>Oyunlarım</h2>
+            <p>Unity ile geliştirdiğim 2D Platform oyununu denemek ister misin?</p>
+            
+            <a href="oyunum/index.html" class="btn-game" target="_blank">🎮 Oyunu Oyna</a>
         </div>
 
     </div>
 
-    <footer style="margin-top: 50px; color: #777;">
-        <p> 2025 Cuma - Tüm Hakları Saklıdır.</p>
+    <footer>
+        <p>&copy; 2024 Cuma Aslan - Tüm Hakları Saklıdır.</p>
     </footer>
 
 </body>

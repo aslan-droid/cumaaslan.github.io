@@ -1,234 +1,116 @@
-<title>Cuma | 3D Artist & Developer</title>
-
-
-7	7	
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuma | 3D Artist & Developer</title>
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
-8	8	
+    
     <style>
-9		-
         body {
-10		-
             font-family: sans-serif;
-11		-
             background-color: #1a1a1a;
-12		-
             color: white;
-13		-
             margin: 0;
-14		-
             padding: 20px;
-15		-
             text-align: center;
-16		-
         }
-17		-
-18		-
+
         header {
-19		-
             padding: 40px;
-20		-
             border-bottom: 2px solid #333;
-21		-
         }
-22		-
-23		-
+
         h1 {
-24		-
             color: #4CAF50;
-25		-
         }
-26		-
-27		-
+
         .container {
-28		-
             max-width: 800px;
-29		-
             margin: 0 auto;
-30		-
         }
-31		-
-32		-
+
         .section {
-33		-
             margin-top: 50px;
-34		-
             padding: 20px;
-35		-
             background: #2a2a2a;
-36		-
             border-radius: 10px;
-37		-
         }
-38		-
-39		-
+
         /* 3D Model Kutusu Tasarımı */
-40		-
         model-viewer {
-41		-
             width: 100%;
-42		-
             height: 400px;
-43		-
             background-color: #444;
-44		-
             border-radius: 8px;
-45		-
-            margin-bottom: 20px; /* Modeller arası boşluk */
-46		-
+            margin-bottom: 20px;
         }
-47		-
-48		-
-        /* Model Başlıkları */
-49		-
-        h3.model-title {
-50		-
-            text-align: left;
-51		-
-            margin-top: 30px;
-52		-
-            color: #ddd;
-53		-
-        }
-54		-
-55		-
-        /* Buton Tasarımı*/
-56		-
+
+        /* Buton Tasarımı */
         .btn {
-57		-
             background-color: #4CAF50;
-58		-
             color: white;
-59		-
-            padding: 10px 20px;
-60		-
+            padding: 15px 30px;
             text-decoration: none;
-61		-
             border-radius: 5px;
-62		-
             display: inline-block;
-63		-
             margin-top: 10px;
-64		-
+            font-weight: bold;
+            font-size: 18px;
         }
-65		-
-66		-
+
         .btn:hover {
-67		-
             background-color: #45a049;
-68		-
         }
-9	+
-        body { font-family: sans-serif; background-color: #1a1a1a; color: white; margin: 0; padding: 20px; text-align: center; }
-10	+
-        header { padding: 40px; border-bottom: 2px solid #333; }
-11	+
-        h1 { color: #4CAF50; }
-12	+
-        .container { max-width: 800px; margin: 0 auto; }
-13	+
-        .section { margin-top: 50px; padding: 20px; background: #2a2a2a; border-radius: 10px; }
-14	+
-        model-viewer { width: 100%; height: 400px; background-color: #444; border-radius: 8px; }
-15	+
-        .btn { background-color: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 10px; }
-16	+
-        .btn:hover { background-color: #45a049; }
-69	17	
+        
+        footer {
+            margin-top: 50px;
+            color: #777;
+            font-size: 0.8em;
+        }
     </style>
-70	18	
 </head>
-71	19	
 <body>
 
-@@ -76,43 +24,29 @@ <h1>Merhaba, Ben Cuma</h1>
-76	24	
+    <header>
+        <h1>Merhaba, Ben Cuma</h1>
+        <p>3D Artist & Developer</p>
     </header>
-77	25	
 
-78	26	
     <div class="container">
-79		-
-80	27	
+
         <div class="section">
-81	28	
             <h2>Hakkımda</h2>
-82	29	
             <p>
-83		-
-                Merhaba, ben CUMA! <br><br>
-84		-
-                Yönetim Bilişim Sistemleri okuyorum ve teknolojiyle iş süreçlerini iyileştirmeye ilgi duyuyorum.
-85		-
-                Burada hem okul projelerimi hem de kendi geliştirdiğim küçük uygulamaları paylaşıyorum. Kod yazarak öğrenmeyi çok seviyorum.
-86		-
-                <br><br>
-87		-
-                <strong>İlgi Alanlarım:</strong><br>
-88		-
-                - Visual Studio ile yazılım geliştirme<br>
-89		-
-                - Basit Unity projeleri<br>
-90		-
-                - Web teknolojilerini öğrenme
-91		-
-                <br><br>
-92		-
-                Amacım her gün bir öncekinden daha iyi bir geliştirici olmak..
-30	+
                 Merhaba, ben CUMA! Yönetim Bilişim Sistemleri okuyorum.
-31	+
                 Visual Studio, Unity ve Web teknolojileri ile ilgileniyorum.
-93	32	
+                Hem 3D modelleme yapıyor hem de oyun geliştiriyorum.
             </p>
-94	33	
         </div>
-95	34	
 
-96	35	
         <div class="section">
-97	36	
             <h2>3D Modellerim</h2>
-98		-
-            <p>Aşağıdaki modelleri fare ile döndürebilirsin:</p>
-99		-
-100		-
-            <h3 class="model-title">1. İlk Modelim</h3>
-101		-
-            <model-viewer src="modelim.glb" alt="3D Model" auto-rotate camera-controls></model-viewer>
-102		-
-103		-
-            <h3 class="model-title">2. Arda Modeli</h3>
-37	+
             <p>Aşağıdaki modeli fare ile döndürebilirsin:</p>
-38	+
             
-39	+
             <h3 style="color:#ddd;">Arda Modeli</h3>
-104	40	
             <model-viewer src="arda-model.glb" alt="Arda 3D Model" auto-rotate camera-controls></model-viewer>
-105	41	
         </div>
-106	42	
 
-107	43	
         <div class="section">
-108	44	
             <h2>Unity Projelerim</h2>
-109	45	
             <p>Geliştirdiğim oyunları tarayıcı üzerinden oynayabilirsiniz.</p>
-110		-
-111	46	
-            <h3>Proje 1: Bayrak Kapmaca</h3>
-112	47	
-            <p>Karakterin bayrağa ulaşmaya çalıştığı 2D platform oyunu.</p>
-113	48	
-            <a href="oyun1/index.html" class="btn" target="_blank">Oyunu Oyna</a>
-114	49	
-        </div>
-115		-
-116	50	
-    </div>
-117	51	
 
-118	52	
-    <footer style="margin-top: 50px; color: #777;">
+            <h3>Proje 1: Bayrak Kapmaca</h3>
+            <p>Karakterin bayrağa ulaşmaya çalıştığı 2D platform oyunu.</p>
+            
+            <a href="oyunum/index.html" class="btn" target="_blank">Oyunu Oyna ►</a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Cuma Aslan - Tüm Hakları Saklıdır</p>
+    </footer>
+
+</body>
+</html>

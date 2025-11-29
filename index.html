@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuma | Portfolyo</title>
+    <!-- 3D Model Görüntüleyici -->
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
     
     <style>
         body {
             font-family: 'Segoe UI', sans-serif;
-            background-color: #1a1a1a; /* Koyu arka plan */
-            color: #ffffff; /* Beyaz yazı */
+            background-color: #1a1a1a;
+            color: #ffffff;
             margin: 0;
             padding: 0;
             text-align: center;
@@ -23,7 +24,7 @@
         }
 
         h1 {
-            color: #4CAF50; /* Yeşil başlık */
+            color: #4CAF50;
             margin: 0;
             font-size: 2.5em;
         }
@@ -60,7 +61,7 @@
         /* Oyun Butonu Tasarımı */
         .btn-game {
             display: inline-block;
-            background-color: #4CAF50; /* Yeşil Buton */
+            background-color: #4CAF50;
             color: white;
             padding: 15px 30px;
             text-decoration: none;
@@ -68,12 +69,21 @@
             font-weight: bold;
             border-radius: 5px;
             margin-top: 20px;
+            margin-right: 10px; /* Butonlar arası boşluk */
             transition: background 0.3s;
         }
 
         .btn-game:hover {
-            background-color: #45a049; /* Üzerine gelince koyulaşsın */
+            background-color: #45a049;
             cursor: pointer;
+        }
+        
+        /* İkinci buton için farklı renk (Mavi) */
+        .btn-new {
+            background-color: #2196F3;
+        }
+        .btn-new:hover {
+            background-color: #0b7dda;
         }
 
         footer {
@@ -106,15 +116,28 @@
             <h2>3D Modellerim</h2>
             <p>Aşağıdaki modeli fare ile çevirebilirsin:</p>
             
-            <!-- BURASI GÜNCELLENDİ: Yeni dosya adını yazdım -->
+            <!-- Senin tasarladığın model -->
             <model-viewer src="arda-oyun-modeli.glb" alt="Arda Oyun Modeli" auto-rotate camera-controls></model-viewer>
         </div>
 
         <div class="section">
             <h2>Oyunlarım</h2>
-            <p>Unity ile geliştirdiğim 2D Platform oyununu denemek ister misin?</p>
+            <p>Geliştirdiğim oyunları tarayıcı üzerinden oynayabilirsiniz.</p>
             
-            <a href="oyunum/index.html" class="btn-game" target="_blank">🎮 Oyunu Oyna</a>
+            <!-- 1. Eski Oyun -->
+            <div style="margin-bottom: 30px;">
+                <h3>🎮 İlk Oyunum</h3>
+                <p>Basit 2D deneme projesi.</p>
+                <a href="oyunum/index.html" class="btn-game" target="_blank">Oyunu Oyna</a>
+            </div>
+
+            <!-- 2. Yeni 3D Oyun (Şimdi Yaptığımız) -->
+            <div>
+                <h3>🚀 3D Parkur Macerası (YENİ)</h3>
+                <p>Unity ile geliştirdiğim, çok bölümlü ve engelli 3D koşu oyunu. Hem PC hem mobilde çalışır!</p>
+                <!-- Dikkat: Klasör adının 'oyun2' olduğundan emin ol -->
+                <a href="oyun2/index.html" class="btn-game btn-new" target="_blank">3D Oyunu Oyna ►</a>
+            </div>
         </div>
 
     </div>
